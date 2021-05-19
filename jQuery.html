@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones jQuery</title>
+    <link rel="stylesheet" href="jquery.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <!-- <h1 id="titulo">hola todos</h1>
+    <h1>hola todos</h1>
+    <h1 id="click">hola todos</h1>
+    <h1>hola todos</h1>
+    <h1>hola todos</h1>
+    <h1 class="otro">hola todos</h1>
+    <h1 class="otro">hola todos</h1> -->
+    <div class="container">
+        <div class="row text-center">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Show / Hide</h5>
+                        <p id="p1" class="card-text">Ejemplo de como utilizar Show, Hide y Toogle.</p>
+                    </div>
+                    <ul class="list-group list-group-flush" ali>
+                        <li class="list-group-item">
+                            <a id="btn1" href="#" class="btn btn-primary">Show</a>
+                            <a id="btn2" href="#" class="btn btn-primary">Hide</a>
+                            <a id="btn3" href="#" class="btn btn-primary">Toggle</a>
+                        </li>
+                    </ul>
+                    <img id="img1" src="pics/PANEL-POLI-400-600x600.jpeg" class="card-img-top" alt="...">
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title"> Slide Down / Slide Up</h5>
+                        <p id="p1" class="card-text">Ejemplo de como utilizar Slide Down, Slide Up y Slide Toogle.</p>
+                    </div>
+                    <ul class="list-group list-group-flush" ali>
+                        <li class="list-group-item">
+                            <a id="btn4" href="#" class="btn btn-primary">Down</a>
+                            <a id="btn5" href="#" class="btn btn-primary">Up</a>
+                            <a id="btn6" href="#" class="btn btn-primary">Toggle</a>
+                        </li>
+                    </ul>
+                    <img id="img2" src="pics/PANEL-POLI-400-600x600.jpeg" class="card-img-top" alt="...">
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Fade In / Fade Out</h5>
+                        <p id="p1" class="card-text">Ejemplo de como utilizar Fade In, Fade Out y Fade Toogle.</p>
+                    </div>
+                    <ul class="list-group list-group-flush" ali>
+                        <li class="list-group-item">
+                            <a id="btn7" href="#" class="btn btn-primary">Fade In</a>
+                            <a id="btn8" href="#" class="btn btn-primary">Fade Out</a>
+                            <a id="btn9" href="#" class="btn btn-primary">Toggle</a>
+                        </li>
+                    </ul>
+                    <img id="img3" src="pics/PANEL-POLI-400-600x600.jpeg" class="card-img-top" alt="...">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script>
+        $("#btn1").click(function() {
+            $("#img1").show();
+        });
+        $("#btn2").click(function() {
+            $("#img1").hide();
+        });
+        $("#btn3").click(function() {
+            $("#img1").toggle();
+        });
+        $("#btn4").click(function() {
+            $("#img2").slideDown();
+        });
+        $("#btn5").click(function() {
+            $("#img2").slideUp();
+        });
+        $("#btn6").click(function() {
+            $("#img2").slideToggle();
+        });
+        $("#btn7").click(function() {
+            $("#img3").fadeIn();
+        });
+        $("#btn8").click(function() {
+            $("#img3").fadeOut();
+        });
+        $("#btn9").click(function() {
+            $("#img3").fadeToggle();
+        });
+    </script>
+
+</body>
+
+</html>
