@@ -13,27 +13,9 @@
 </head>
 
 <body>
-    <!-- <h1 id="titulo">hola todos</h1>
-    <h1>hola todos</h1>
-    <h1 id="click">hola todos</h1>
-    <h1>hola todos</h1>
-    <h1>hola todos</h1>
-    <h1 class="otro">hola todos</h1>
-    <h1 class="otro">hola todos</h1> -->
     <div class="container">
         <h1 class="text-center">Funciones jQuery</h1>
         <hr>
-        <!-- <div class="row">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates, veritatis quia harum magnam inventore id tenetur voluptas deleniti dolorem praesentium corporis. Voluptas assumenda, reprehenderit enim reiciendis recusandae facere debitis
-                deserunt?
-            </p>
-            <div class="col"> <button class="btn btn-primary">Show</button>
-            </div>
-            <div class="col"> <button></button>
-            </div>
-            <div class="col"> <button></button>
-            </div>
-        </div> -->
         <div class="row text-center">
             <div class="col">
                 <div class="card" style="width: 18rem;">
@@ -49,7 +31,6 @@
                         </li>
                     </ul>
                     <img id="img1" src="pics/PANEL-POLI-400-600x600.jpeg" class="card-img-top" alt="...">
-
                 </div>
             </div>
             <div class="col">
@@ -85,20 +66,11 @@
                 </div>
             </div>
         </div>
-
-
-        <!-- <div id="agregar" class="row p-5">
-            <div class="col"></div>
-
-            <a id="btn10" href="#" class="btn btn-secondary">Agregar Clase a #agregar</a>
-
-        </div> -->
         <hr>
         <div class="row">
             <div class="col text-center">
                 <div class="row">
                     <p id="texto1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat dolore autem asperiores corrupti dolores fugiat, facilis nemo. Itaque numquam ullam, quidem odit delectus non cumque necessitatibus suscipit omnis rem? Soluta!</p>
-
                 </div>
                 <div class="row">
                     <div class="col"><a id="btn10" class="btn btn-primary">Agregar Fondo Rojo</a></div>
@@ -111,13 +83,35 @@
         <div class="row">
             <div class="col text-center">
                 <div class="row">
-                    <p id="texto1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat dolore autem asperiores corrupti dolores fugiat, facilis nemo. Itaque numquam ullam, quidem odit delectus non cumque necessitatibus suscipit omnis rem? Soluta!</p>
-
+                    <p id="texto2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat dolore autem asperiores corrupti dolores fugiat, facilis nemo. Itaque numquam ullam, quidem odit delectus non cumque necessitatibus suscipit omnis rem? Soluta!</p>
                 </div>
                 <div class="row">
-                    <div class="col"><a id="btn10" class="btn btn-primary">Agregar Fondo Rojo</a></div>
-                    <div class="col"><a id="btn11" class="btn btn-primary">Remover Fondo Rojo</a></div>
-                    <div class="col"><a id="btn12" class="btn btn-primary">Toggle Fondo Rojo</a></div>
+                    <div class="col"><a id="btn13" class="btn btn-primary">.before</a></div>
+                    <div class="col"><a id="btn14" class="btn btn-primary">.after</a></div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col text-center">
+                <div class="row">
+                    <p id="texto3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat dolore autem asperiores corrupti dolores fugiat, facilis nemo. Itaque numquam ullam, quidem odit delectus non cumque necessitatibus suscipit omnis rem? Soluta!</p>
+                </div>
+                <div class="row">
+                    <div class="col"><a id="btn15" class="btn btn-primary">.append</a></div>
+                    <div class="col"><a id="btn16" class="btn btn-primary">.prepend</a></div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col text-center">
+                <div class="row">
+                    <p id="texto4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat dolore autem asperiores corrupti dolores fugiat, facilis nemo. Itaque numquam ullam, quidem odit delectus non cumque necessitatibus suscipit omnis rem? Soluta!</p>
+                </div>
+                <div class="row">
+                    <div class="col"><a id="btn17" class="btn btn-primary">.html</a></div>
+                    <div class="col"><a id="btn18" class="btn btn-primary">.text</a></div>
                 </div>
             </div>
         </div>
@@ -154,7 +148,6 @@
         $("#btn9").click(function() {
             $("#img3").fadeToggle();
         });
-        // .addClass
         $("#btn10").click(function() {
             $("#texto1").addClass("fondorojo");
         });
@@ -164,19 +157,28 @@
         $("#btn12").click(function() {
             $("#texto1").toggleClass("fondorojo");
         });
+        $("#btn13").click(function() {
+            $("#texto2").before("<h1>Antes</h1>");
+        });
+        $("#btn14").click(function() {
+            $("#texto2").after("<h1>Después</h1>");
+        });
+        $("#btn15").click(function() {
+            $("#texto3").append("<h1>Adjuntar</h1>");
+        });
+        $("#btn16").click(function() {
+            $("#texto3").prepend("<h1>Anteponer</h1>");
+        });
+        $("#btn17").click(function() {
+            $("#texto4").html("<h1>HTML</h1>");
+        });
+        $("#btn18").click(function() {
+            $("#texto4").text("<h1>Texto</h1>");
+        });
 
-        // .before
-
-        // .after
-
-        // .append
-
-        // .html
         // .attr
 
         // .val
-
-        // .text
     </script>
 
 </body>
