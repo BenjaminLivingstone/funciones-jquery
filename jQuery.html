@@ -21,6 +21,19 @@
     <h1 class="otro">hola todos</h1>
     <h1 class="otro">hola todos</h1> -->
     <div class="container">
+        <h1 class="text-center">Funciones jQuery</h1>
+        <hr>
+        <!-- <div class="row">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates, veritatis quia harum magnam inventore id tenetur voluptas deleniti dolorem praesentium corporis. Voluptas assumenda, reprehenderit enim reiciendis recusandae facere debitis
+                deserunt?
+            </p>
+            <div class="col"> <button class="btn btn-primary">Show</button>
+            </div>
+            <div class="col"> <button></button>
+            </div>
+            <div class="col"> <button></button>
+            </div>
+        </div> -->
         <div class="row text-center">
             <div class="col">
                 <div class="card" style="width: 18rem;">
@@ -72,20 +85,43 @@
                 </div>
             </div>
         </div>
-        <div id="agregar" class="row p-5">
+
+
+        <!-- <div id="agregar" class="row p-5">
             <div class="col"></div>
 
             <a id="btn10" href="#" class="btn btn-secondary">Agregar Clase a #agregar</a>
 
-        </div>
+        </div> -->
+        <hr>
         <div class="row">
-            <div class="col"></div>
-            <div class="col"></div>
-            <div class="col"></div>
+            <div class="col text-center">
+                <div class="row">
+                    <p id="texto1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat dolore autem asperiores corrupti dolores fugiat, facilis nemo. Itaque numquam ullam, quidem odit delectus non cumque necessitatibus suscipit omnis rem? Soluta!</p>
+
+                </div>
+                <div class="row">
+                    <div class="col"><a id="btn10" class="btn btn-primary">Agregar Fondo Rojo</a></div>
+                    <div class="col"><a id="btn11" class="btn btn-primary">Remover Fondo Rojo</a></div>
+                    <div class="col"><a id="btn12" class="btn btn-primary">Toggle Fondo Rojo</a></div>
+                </div>
+            </div>
         </div>
+        <hr>
+        <div class="row">
+            <div class="col text-center">
+                <div class="row">
+                    <p id="texto1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat dolore autem asperiores corrupti dolores fugiat, facilis nemo. Itaque numquam ullam, quidem odit delectus non cumque necessitatibus suscipit omnis rem? Soluta!</p>
 
-
-
+                </div>
+                <div class="row">
+                    <div class="col"><a id="btn10" class="btn btn-primary">Agregar Fondo Rojo</a></div>
+                    <div class="col"><a id="btn11" class="btn btn-primary">Remover Fondo Rojo</a></div>
+                    <div class="col"><a id="btn12" class="btn btn-primary">Toggle Fondo Rojo</a></div>
+                </div>
+            </div>
+        </div>
+        <hr>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -120,9 +156,15 @@
         });
         // .addClass
         $("#btn10").click(function() {
-            $("#agregar").addClass(".agregarclase");
-            $("#btn10").html("Listo");
+            $("#texto1").addClass("fondorojo");
         });
+        $("#btn11").click(function() {
+            $("#texto1").removeClass("fondorojo");
+        });
+        $("#btn12").click(function() {
+            $("#texto1").toggleClass("fondorojo");
+        });
+
         // .before
 
         // .after
